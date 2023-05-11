@@ -1,0 +1,29 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,5556.935,66683.22,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,183.5,2202.00,USD,"Hosted Zones (2), Number of domains stored (1), Number of Elastic Network Interfaces (2)"
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,0,0.00,USD,
+My Estimate,US East (N. Virginia),,S3 Standard,0,47.1,565.20,USD,S3 Standard storage (2 TB per month)
+My Estimate,US East (N. Virginia),,S3 Glacier Deep Archive,0,0.5,6.00,USD,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (500 GB per month)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,"DT Inbound: All other regions (0 TB per month), DT Outbound: Not selected (0 TB per month)"
+My Estimate,US East (N. Virginia),,VPN Connection,0,0,0.00,USD,"Working days per month (), Number of subnet associations (), Number of Site-to-Site VPN Connections ()"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,987.3,11847.60,USD,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,908.85,10906.20,USD,"Number of Network Load Balancers (2), Average TLS connection duration (30 seconds), Average number of new TLS connections (10 per second), Processed bytes per NLB for TCP (50 GB per hour), Processed bytes per NLB for TLS (50 GB per hour)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,1123.9750000000001,13487.70,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (300 GB), Quantity (2), Instance type (db.m2.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (5 GB)"
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,1004.48,12053.76,USD,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (m5a.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,992.8,11913.60,USD,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (c5.2xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,308.43,3701.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0.00,USD,"Number of EC2 instances (4), Number of EIPs per instance (1)"
+
+
+
+
+Changes
+"* VPC: Update Data Processed per NAT Gateway from 20TB -> 10TB per month"
+"* ELB: Processed bytes per NLB for TCP from 200GB -> 50GB, Processed bytes per NLB for TLS from 100GB->50GB"
+"* ELB-Application Load Balancer: Reduce Processed bytes (EC2 Instances and IP addresses as targets) from 200GB -> 50GB"
